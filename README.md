@@ -1,18 +1,28 @@
-
-
-<div align="center" style="display: flex; justify-content: center; flex-wrap: wrap; align-items: start">
-   <div style="margin: -7px 50px 0 0">
-      <h1>Test-task project for Skillex Company</h1>
-   </div>
-
-   <div align="center" style="display: inline-block">
-      <a href="https://www.linkedin.com/company/skillex-am/" target="blank">
-         <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFBdwURes3Ocg/company-logo_200_200/company-logo_200_200/0/1736937024067/skillex_am_logo?e=2147483647&v=beta&t=euGdD-9rltxvoNSt2PIQPj1wzYSlrAv8wxdDltPttL0" width="120" alt="Nest Logo" />
-      </a>
-   </div>
+<div align="center">
+    <h1 align="center">Test-task project for Skillex Company</h1>
+    <a href="https://www.linkedin.com/company/skillex-am/" target="blank">
+     <img src="https://res.cloudinary.com/dnw7hycj6/image/upload/v1750495497/images/test/skillex_wlhhtt.png" width="120" alt="Nest Logo" />
+    </a>
 </div>
 
 ## Description
+
+This project is a test task for **Skillex Company**, built using **NestJS** framework by Me ([davmik2601](https://github.com/davmik2601)).
+As Database, it uses MYSQL **without any ORM** (as per task requirements).
+
+### Why NestJS instead of Express?
+* First of all, in the task requirements, **it doesn't mentioned** which framework to use, so I decided to use NestJS.
+* NestJS is the best Node.js framework for all over the world. (Express is already old for me).
+
+
+## Deployment (Live)
+For your convenience, I have deployed the project on a server (AWS EC2), so you can check it out live.
+All server configurations, nginx, domain settings, SSL certificates, etc. **are done by me**.
+
+Go to:
+### https://skillex-task.site/
+
+## Task Description
 
 ### Test Task: Generate Combinations and Store in MySQL
 
@@ -97,7 +107,7 @@ Additional Information
 
 ## Project setup
 
-1. First of all create db in your PostgreSQL server for the project
+1. First of all create db in your MySQL server for the project
    and set up the environment variables in `.env` file (check `.env.example` for reference).
 
 
