@@ -8,9 +8,9 @@
 ## Description
 
 This project is a test task for **Skillex Company**, built using **NestJS** framework by Me ([davmik2601](https://github.com/davmik2601)).
-As Database, it uses MYSQL **without any ORM** (as per task requirements).
+As Database, it uses MYSQL **without any ORM** (as per task requirements). The base logic method here -> https://github.com/davmik2601/skillex-task/blob/main/src/modules/combination/combination.service.ts
 
-### Why NestJS instead of Express?
+#### Why NestJS instead of Express?
 * First of all, in the task requirements, **it doesn't mentioned** which framework to use, so I decided to use NestJS.
 * NestJS is the best Node.js framework for all over the world. (Express is already old for me).
 
@@ -20,7 +20,43 @@ For your convenience, I have deployed the project on a server (AWS EC2), so you 
 All server configurations, nginx, domain settings, SSL certificates, etc. **are done by me**.
 
 Go to:
-### https://skillex-task.site/
+<div align="center" style="font-size: 16px; margin: -15px 0 0 20px;">
+    <a href="https://skillex-task.site/" target="_blank">
+        <strong>👉 &nbsp;&nbsp; https://skillex-task.site/</strong> &nbsp;&nbsp; 👈
+    </a>
+</div>
+
+
+## Project setup
+
+1. First of all create db in your MySQL server for the project
+   and set up the environment variables in `.env` file (check `.env.example` for reference).
+
+
+2. Please use **Node 20.x** versions
+
+
+3. Install the dependencies using `npm`:
+
+```bash
+$ npm install
+```
+
+## Compile and run the project
+
+You can run the following commands to compile and run the project:
+
+```bash
+# (first of all run all migrations)
+$ npm run migration:run 
+
+# for development (watch mode)
+$ npm run start:dev
+# without watch mode
+$ npm run start
+# production mode
+$ npm run start:prod
+```
 
 ## Task Description
 
@@ -104,34 +140,3 @@ Rules
 Additional Information
 * You can use mysql2 for MySQL connections.
 * Do not use any ORM stick to raw SQL queries.
-
-## Project setup
-
-1. First of all create db in your MySQL server for the project
-   and set up the environment variables in `.env` file (check `.env.example` for reference).
-
-
-2. Please use **Node 20.x** versions
-
-
-3. Install the dependencies using `npm`:
-
-```bash
-$ npm install
-```
-
-## Compile and run the project
-
-You can run the following commands to compile and run the project:
-
-```bash
-# (first of all run all migrations)
-$ npm run migration:run 
-
-# for development (watch mode)
-$ npm run start:dev
-# without watch mode
-$ npm run start
-# production mode
-$ npm run start:prod
-```
