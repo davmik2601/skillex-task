@@ -4,7 +4,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 export function setupSwagger(app: INestApplication): void {
   const options = new DocumentBuilder()
     .setTitle('API')
-    .setDescription('M-One Social Project (test task)')
+    .setDescription('Skillex Test task project')
     .setVersion('3.1.0')
     .addBearerAuth({
       type: 'http',
